@@ -1,0 +1,78 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Colors*/
+:root {
+    --header-color: #0084fd;
+    --card-color: #b5ddff;
+    --Section-color: #9792e4;
+    --free-text: #fdc15f;
+    --footer: #000000 ;
+}
+
+
+/* Generics */
+body{
+    font-family: 'PT Sans', sans-serif;
+}
+
+/*Utils*/
+
+
+
+
+/* layout -REMOVE- */
+.container-page{
+    height: 1400px;
+    display: flex;
+    flex-direction: column;
+    border: 2px blueviolet solid;
+    margin: 0 auto;
+}
+.container{
+    height: 1200px;
+    display: flex;
+    flex-direction: row;
+    border: 2px black solid;
+}
+
+
+
+.side-bar{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    height: 1200px;
+    border: 2px red solid;
+}
+.container-body{
+    display: flex;
+    flex-direction: column;
+    width: 2000px;
+    height: 1200px;
+    border: 2px green solid;
+}
+.container-body header{
+    display: flex;
+    flex-direction: row;
+    width: 2000px;
+    height: 200px;
+    border: 2px blue solid;
+}
+
+.container-body main{
+    display: flex;
+    flex-direction: row;
+    width: 2000px;
+    height: 1000px;
+    border: 2px gold solid;
+}
+
+.container-page footer{
+    height: 200px;
+    border: 2px coral solid;
+}
