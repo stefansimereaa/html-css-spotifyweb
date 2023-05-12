@@ -89,7 +89,6 @@ body{
     color: white;
     display: none;
 }
-
 /* Hover Effects */
 
 .row:hover h2{
@@ -396,6 +395,8 @@ footer{
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
 }
 
 
@@ -443,5 +444,49 @@ footer{
     padding: 0px 10px;
 }
 
-/* Section  */
+/* Section Player */
 
+.player{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    font-size: 18px;
+}
+
+.player .col{
+    text-align: center;
+}
+
+.player i{
+    padding: 10px;
+}
+
+.player i:nth-child(3){
+    font-size: 30px;
+}
+.player .line{
+    width: 400px;
+}
+
+/* Section Menu */
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    color: gray;
+    justify-content: center;
+    align-items: center;
+}
+.menu i{
+    padding: 10px;
+}
+
+.menu .line{
+    margin-left: 10px;
+    width: 100px;
+}
+
+.menu .settings{
+    display: flex;
+    flex-direction: row;
+}
