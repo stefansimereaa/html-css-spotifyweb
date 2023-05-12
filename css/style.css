@@ -83,6 +83,13 @@ body{
     display: none;
 }
 
+.albums .col i{
+    position: relative;
+    bottom: 180px;
+    color: white;
+    display: none;
+}
+
 /* Hover Effects */
 
 .row:hover h2{
@@ -101,9 +108,19 @@ body{
     color: white;
 }
 
-.nav:active .btn-black{
+.nav:hover .btn-black{
     transform: scale(1.1);
 }
+
+.albums .col:hover img{
+    opacity: 0.3;
+}
+
+.albums .col:hover i{
+    transform: scale(3);
+    display: block;
+}
+
 
 /* Side Bar */
 
@@ -425,8 +442,6 @@ footer{
     color: gray;
     padding: 0px 10px;
 }
-
-
 
 /* Section  */
 
