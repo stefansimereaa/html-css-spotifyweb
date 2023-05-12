@@ -122,6 +122,14 @@ body{
     display: block;
 }
 
+.minutes .line .value:hover .marker{
+    display: block;
+}
+
+.line .value:hover .marker{
+    display: block;
+}
+
 
 /* Side Bar */
 
@@ -191,6 +199,8 @@ body{
 
 #download-profile .img-profile{
     margin-left: 5px;
+    background-color: gray;
+    border-radius: 20px;
 }
 
 #download-profile .line{
@@ -484,6 +494,35 @@ footer{
     width: 400px;
 }
 
+.col .line .value{
+    background-color: greenyellow;
+    width: 90px;
+    padding: 2px 0px;
+}
+
+.minutes{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 15px;
+}
+
+.minutes .minutes-player{
+    padding: 10px;
+}
+
+.minutes .line .value .marker{
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: green;
+    position: absolute;
+    top: 70%;
+    right: 55%;
+    border: 2px solid white;
+    display: none;
+}
+
 /* Section Menu */
 
 .menu{
@@ -501,6 +540,24 @@ footer{
 .menu .line{
     margin-left: 10px;
     width: 100px;
+}
+
+.menu .line .value{
+    background-color: greenyellow;
+    width: 100px;
+    padding: 2px 0px;
+}
+
+.menu .value .marker{
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: green;
+    position: absolute;
+    top: 45%;
+    right: 1%;
+    border: 2px solid white;
+    display: none;
 }
 
 .menu .settings{
