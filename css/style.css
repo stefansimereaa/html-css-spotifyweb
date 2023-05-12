@@ -279,4 +279,47 @@ header .btn-black{
     color: gray;
 }
 
+/* Section For You */
 
+#for-you{
+    display: flex;
+    flex-direction: column;
+}
+
+#for-you h3{
+    padding: 10px 20px;
+    font-size: 30px;
+}
+
+#for-you h4{
+    padding: 10px 20px;
+    font-size: 18px;
+    color: gray;
+}
+
+#for-you .albums{
+    display: flex;
+    flex-direction: row;
+}
+
+#for-you .col{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Section Albums */
+
+#for-you .albums{
+    text-align: center;
+    padding: 20px 0px;
+}
+
+#for-you .albums .col{
+    max-width: 220px;
+    margin-left: 20px;
+}
+
+#for-you .albums h3{
+    color: white;
+    font-size: 18px;
+}
