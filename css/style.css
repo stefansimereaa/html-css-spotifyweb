@@ -8,32 +8,27 @@
 /* Colors*/
 :root {
     --header-color: #0084fd;
-    --card-color: #b5ddff;
-    --Section-color: #9792e4;
-    --free-text: #fdc15f;
-    --footer: #000000 ;
+    --main-bg:  #141922;
+    --footer: #282828;
 }
 
 
 /* Generics */
 body{
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /*Utils*/
-
-
-
-
 /* layout -REMOVE- */
 .container-page{
+    width: 2000px;
     height: 1400px;
     display: flex;
     flex-direction: column;
-    border: 2px blueviolet solid;
-    margin: 0 auto;
+    border: 2px pink solid;
 }
 .container{
+    width: 2000px;
     height: 1200px;
     display: flex;
     flex-direction: row;
@@ -44,21 +39,20 @@ body{
 .side-bar{
     display: flex;
     flex-direction: column;
-    width: 600px;
+    width: 300px;
     height: 1200px;
-    border: 2px red solid;
+    background-color: black;
 }
 .container-body{
     display: flex;
     flex-direction: column;
-    width: 2000px;
+    width: 1700px;
     height: 1200px;
     border: 2px green solid;
 }
 .container-body header{
     display: flex;
     flex-direction: row;
-    width: 2000px;
     height: 200px;
     border: 2px blue solid;
 }
@@ -66,12 +60,105 @@ body{
 .container-body main{
     display: flex;
     flex-direction: row;
-    width: 2000px;
     height: 1000px;
     border: 2px gold solid;
 }
 
 .container-page footer{
     height: 200px;
-    border: 2px coral solid;
+    border: 2px violet solid;
+}
+
+.row-title{
+    color: white;
+}
+
+.line{
+    width: 250px;
+    border-radius: 10px;
+    padding: 2px 0px;
+    background-color: gray;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Side Bar */
+
+.side-bar .row img{
+    max-width: 30px;
+}
+
+.side-bar .col{
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.side-bar .row-logo{
+    max-width: 200px;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.side-bar .row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.side-bar .space{
+    padding: 0px 10px;   
+}
+
+.side-bar h2{
+    color: gray;
+    font-size: 18px;
+}
+
+
+
+/* Section Home */
+
+#home{
+   margin-bottom: 40px; 
+}
+
+/* Section Playlist*/
+
+#playlist{
+    padding: 00px 0px;
+}
+
+#playlist .row-title{
+    color: white;
+}
+#playlist .row{
+    margin-bottom: 20px;
+}
+#playlist i{
+    font-size: 40px;
+}
+
+/* Section Download and Profile */
+
+#download-profile{
+    margin-top: 400px;
+    padding: 40px 0px;
+}
+
+#download-profile .img-profile{
+    margin-left: 5px;
+}
+
+#download-profile .line{
+    width: 250px;
+    border-radius: 10px;
+    padding: 2px 0px;
+    background-color: gray;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
