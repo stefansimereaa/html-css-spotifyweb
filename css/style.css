@@ -57,14 +57,16 @@ body{
 .container-body main{
     display: flex;
     flex-direction: row;
-    height: 1000px;
-    border: 2px gold solid;
+    height: 1200px;
+    background-color: var(--main-bg);
 }
 
 .container-page footer{
     height: 200px;
     border: 2px violet solid;
 }
+
+/* Utils */
 
 .row-title{
     color: white;
@@ -79,6 +81,27 @@ body{
     margin-bottom: 10px;
 }
 
+.line-green{
+    width: 50px;
+    border-radius: 10px;
+    padding: 2px 0px;
+    background-color: greenyellow;
+    display: none;
+}
+
+/* Hover Effects */
+
+.row:hover h2{
+    color: white;
+}
+
+.hover-active:active h2{
+    color: white;
+}
+
+.hover-active:hover .line-green{
+    display: block;
+}
 
 /* Side Bar */
 
@@ -182,3 +205,33 @@ header .btn-black{
     width: 300px;
     padding: 20px;
 }
+
+/* Main */
+
+#type-music{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 80px;
+    width: 100%;
+    border: 2px solid green;
+}
+
+#type-music .row-type{
+   color: gray;
+   font-size: 13px;
+   display: flex;
+   flex-direction: row;
+}
+
+#type-music h2{
+    padding: 10px 10px;
+}
+
+#type-music .hover-active{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
