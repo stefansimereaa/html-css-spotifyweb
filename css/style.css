@@ -20,15 +20,12 @@ body{
 /*Utils*/
 /* layout -REMOVE- */
 .container-page{
-    width: 2000px;
-    height: 1400px;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    border: 2px pink solid;
 }
 .container{
-    width: 2000px;
-    height: 1200px;
+    width: 100%;
     display: flex;
     flex-direction: row;
     border: 2px black solid;
@@ -38,16 +35,15 @@ body{
     display: flex;
     flex-direction: column;
     width: 300px;
-    height: 1200px;
     background-color: black;
 }
 .container-body{
     display: flex;
     flex-direction: column;
-    width: 1700px;
+    width: 100%;
     height: 1200px;
-    border: 2px green solid;
 }
+
 .container-body header{
     display: flex;
     flex-direction: row;
@@ -57,13 +53,11 @@ body{
 .container-body main{
     display: flex;
     flex-direction: column;
-    height: 1200px;
     background-color: var(--main-bg);
 }
 
 .container-page footer{
-    height: 200px;
-    border: 2px violet solid;
+    height: 100px;
 }
 
 /* Utils */
@@ -101,6 +95,14 @@ body{
 
 .hover-active:hover .line-green{
     display: block;
+}
+
+.row:hover i{
+    color: white;
+}
+
+.nav:active .btn-black{
+    transform: scale(1.1);
 }
 
 /* Side Bar */
@@ -202,7 +204,7 @@ header .btn-black{
     background-color: black;
     border-radius: 50px;
     border-color: white;
-    width: 300px;
+    width: 200px;
     padding: 20px;
 }
 
@@ -368,3 +370,63 @@ header .btn-black{
     color: white;
     font-size: 18px;
 }
+
+
+/* Footer */
+
+footer{
+    background-color: var(--footer);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+/* Section Song Played */
+
+.song-played{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.song-played h3{
+    padding: 0px 20px;
+    font-size: 30px;
+}
+
+.song-played h3{
+    font-size: 15px;
+    color: gray;
+}
+
+.song-played .col{
+    display: flex;
+    flex-direction: column;
+}
+
+.song-played .col-preferite{
+    display: flex;
+    flex-direction: row;
+}
+
+.song-played{
+    text-align: center;
+    padding: 20px 0px;
+}
+
+.song-played .col img{
+    max-width: 50px;
+    margin-left: 20px;
+}
+
+.song-played i{
+    color: gray;
+    padding: 0px 10px;
+}
+
+
+
+/* Section  */
+
