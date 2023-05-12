@@ -7,7 +7,6 @@
 
 /* Colors*/
 :root {
-    --header-color: #0084fd;
     --main-bg:  #141922;
     --footer: #282828;
 }
@@ -35,7 +34,6 @@ body{
     border: 2px black solid;
 }
 
-
 .side-bar{
     display: flex;
     flex-direction: column;
@@ -53,8 +51,7 @@ body{
 .container-body header{
     display: flex;
     flex-direction: row;
-    height: 200px;
-    border: 2px blue solid;
+    height: 100px;
 }
 
 .container-body main{
@@ -81,6 +78,7 @@ body{
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
 
 /* Side Bar */
 
@@ -119,15 +117,13 @@ body{
     font-size: 18px;
 }
 
-
-
-/* Section Home */
+/* Side Bar Section Home */
 
 #home{
    margin-bottom: 40px; 
 }
 
-/* Section Playlist*/
+/* Side Bar Section Playlist*/
 
 #playlist{
     padding: 00px 0px;
@@ -143,7 +139,7 @@ body{
     font-size: 40px;
 }
 
-/* Section Download and Profile */
+/* Side Bar Section Download and Profile */
 
 #download-profile{
     margin-top: 400px;
@@ -161,4 +157,28 @@ body{
     background-color: gray;
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+/* Header */
+header{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+header .nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+header .btn-black{
+    color: white;
+    background-color: black;
+    border-radius: 50px;
+    border-color: white;
+    width: 300px;
+    padding: 20px;
 }
