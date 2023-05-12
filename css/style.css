@@ -323,3 +323,48 @@ header .btn-black{
     color: white;
     font-size: 18px;
 }
+
+/* Section Artists Populars */
+
+#artists-populars{
+    display: flex;
+    flex-direction: column;
+}
+
+#artists-populars h3{
+    padding: 10px 20px;
+    font-size: 30px;
+}
+
+#artists-populars h4{
+    padding: 10px 20px;
+    font-size: 18px;
+    color: gray;
+}
+
+#artists-populars .albums{
+    display: flex;
+    flex-direction: row;
+}
+
+#artists-populars .col{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Section Albums */
+
+#artists-populars .albums{
+    text-align: center;
+    padding: 20px 0px;
+}
+
+#artists-populars .albums .col{
+    max-width: 220px;
+    margin-left: 20px;
+}
+
+#artists-populars .albums h3{
+    color: white;
+    font-size: 18px;
+}
