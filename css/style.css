@@ -226,6 +226,11 @@ header .btn-black{
 
 /* Main */
 
+main{
+    overflow-y: auto;
+    flex-grow: 1;
+}
+
 /* Section Type Music */
 
 #type-music{
@@ -397,6 +402,7 @@ footer{
     align-items: center;
     justify-content: space-between;
     padding: 0px 20px;
+    z-index: 1;
 }
 
 
@@ -487,6 +493,11 @@ footer{
 }
 
 .menu .settings{
+    display: flex;
+    flex-direction: row;
+}
+
+.menu .minutes{
     display: flex;
     flex-direction: row;
 }
