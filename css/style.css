@@ -85,8 +85,10 @@ body{
 }
 
 .albums .col i{
-    position: relative;
-    bottom: 180px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%);
     color: white;
     display: none;
 }
@@ -155,6 +157,10 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.side-bar .row-logo-2{
+    display: none;
 }
 
 .side-bar .row{
@@ -300,6 +306,7 @@ main{
 #recently-played .col{
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 /* Section Albums */
@@ -312,6 +319,7 @@ main{
 #recently-played .albums .col{
     max-width: 220px;
     margin-left: 20px;
+    position: relative;
 }
 
 #recently-played .albums h3{
@@ -361,6 +369,7 @@ main{
 #for-you .albums .col{
     max-width: 220px;
     margin-left: 20px;
+    position: relative;
 }
 
 #for-you .albums h3{
@@ -407,6 +416,7 @@ main{
 #artists-populars .albums .col{
     max-width: 220px;
     margin-left: 20px;
+    position: relative;
 }
 
 #artists-populars .albums h3{
@@ -460,6 +470,10 @@ footer{
 .song-played .col-preferite{
     display: flex;
     flex-direction: row;
+}
+
+.song-played .col-preferite-2{
+    display: none;
 }
 
 .song-played{
@@ -572,20 +586,19 @@ footer{
     flex-direction: row;
 }
 
-.menu .minutes{
-    display: flex;
-    flex-direction: row;
-}
-
 
 /* Responsive Layout */
 
-
-/* MAX WIDTH >>> 576px, 768px, 992px, 1200px */
-
+/* Responsive 992px */
 
 @media screen and (max-width: 992px) {
 
+    .albums .col i{
+        position: relative;
+        bottom: 150px;
+        color: white;
+        display: none;
+    }
 
     /* Side Bar */
 
@@ -631,15 +644,167 @@ footer{
         max-width: 150px;
         margin-bottom: 100px;
     }
-
 }
+
+/* Responsive 768px */
 
 @media screen and (max-width: 768px) {
 
+     /* Section Recently Played */
+
+     #recently-played .albums{
+        flex-basis: calc(100% / 2);
+    }
     
-    
+    #recently-played .albums .col{
+        max-width: 200px;
+        margin-bottom: 20px;
+    }
+
+    /* Section For You */
+
+    #for-you .albums .col{
+        max-width: 200px;
+        margin-bottom: 20px;
+    }
+
+    /* Section Artists Populars */
+
+    #artists-populars .albums .col{
+        max-width: 200px;
+        margin-bottom: 100px;
+    }
+
+    /* Footer */
+
+    footer{
+        flex-basis: calc(100% / 3);
+    }
+
+    .player .line{
+        width: 100px;
+    }
 }
 
+
+/* Responsive 576px */
+
 @media screen and (max-width: 576px) {
+
+    /* Side Bar */
+
+    .side-bar{
+        width: 80px;
+        display: flex;
+    }
+
+    /* Section Home */
+
+    .side-bar #home .row-logo{
+        display: none;
+    }
+
+    .side-bar #home .row-logo-2{
+        display: block;
+        max-width: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .side-bar #home .row{
+        margin-bottom: 10px;
+    }
+
+    .side-bar #home h2{
+        display: none;
+    }
+
+    /* Section Playlist */
+
+    .side-bar #playlist{
+        display: none;
+    }
+
+    /* Section Download and profile */
+
+    .side-bar #download-profile h2,h3,.line{
+        display: none;
+    }
+
+    .side-bar #download-profile{
+        padding: 0px 5px;
+        margin-top: 440px;
+    }
+
+    /* Main */
+    .container-body h3{
+        display: block;
+    }
+
+    /* Footer */
+
+    footer{
+        flex-basis: calc(100% / 3);
+        font-size: 10px;
+        padding: 0px;
+    }
+
+    footer h3{
+        display: block;
+    }
+
+    /* Section Song Played */
+
+    .song-played .col-preferite{
+        display: none;
+    }
+
+    .song-played .col-preferite-2{
+        display: block;
+    }
+
+    footer .col-preferite-2 i{
+        padding: 5px 0px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .song-played .col-preferite .row{
+        display: flex;
+        flex-direction: column;
+    }
     
+    /* Section Player */
+
+
+    footer .player i{
+        font-size: 8px;
+    }
+
+    .player .line{
+        width: 70px;
+        display: block;
+    }
+
+    .col .line .value{
+        background-color: greenyellow;
+        width: 40px;
+        padding: 2px 0px;
+    }
+    
+    /* Section Menu */
+
+
+    .menu .line{
+        width: 40px;
+        display: block;
+    }
+    
+    .menu .col .line .value{
+        width: 40px;
+    }
+
+    .menu i{
+        padding: 0px 5px;
+    }
 }
