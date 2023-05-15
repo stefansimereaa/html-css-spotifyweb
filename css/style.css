@@ -593,9 +593,13 @@ footer{
 
 @media screen and (max-width: 992px) {
 
+    /* Hover effect */
+
     .albums .col i{
-        position: relative;
-        bottom: 150px;
+        position: absolute;
+        top: 26%;
+        left: 50%;
+        transform: translate(-50%);
         color: white;
         display: none;
     }
@@ -650,6 +654,17 @@ footer{
 
 @media screen and (max-width: 768px) {
 
+    /* Hover effect */
+
+    .albums .col i{
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%);
+        color: white;
+        display: none;
+    }
+
      /* Section Recently Played */
 
      #recently-played .albums{
@@ -690,6 +705,17 @@ footer{
 /* Responsive 576px */
 
 @media screen and (max-width: 576px) {
+
+    /* Hover effect */
+
+    .albums .col i{
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%);
+        color: white;
+        display: none;
+    }
 
     /* Side Bar */
 
