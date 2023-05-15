@@ -24,7 +24,6 @@ body{
     width: 100%;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
 }
 
 .container-side-main{
@@ -37,7 +36,7 @@ body{
 .side-bar{
     display: flex;
     flex-direction: column;
-    width: 300px;
+    max-width: 100vh;
     background-color: black;
 }
 .container-body{
@@ -132,6 +131,12 @@ body{
 
 
 /* Side Bar */
+
+.side-bar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
 .side-bar .row img{
     max-width: 30px;
@@ -260,6 +265,7 @@ main{
    font-size: 13px;
    display: flex;
    flex-direction: row;
+   flex-wrap: wrap;
 }
 
 #type-music h2{
@@ -288,6 +294,7 @@ main{
 #recently-played .albums{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 #recently-played .col{
@@ -568,4 +575,71 @@ footer{
 .menu .minutes{
     display: flex;
     flex-direction: row;
+}
+
+
+/* Responsive Layout */
+
+
+/* MAX WIDTH >>> 576px, 768px, 992px, 1200px */
+
+
+@media screen and (max-width: 992px) {
+
+
+    /* Side Bar */
+
+    #download-profile{
+        margin-top: 0px;
+        padding: 0px 0px;
+    }
+
+    /* Section Type Music */
+
+    #type-music{
+        margin-bottom: 20px;
+    }
+
+    #type-music .row-type{
+       display: flex;
+       flex-direction: row;
+       align-items: center;
+       justify-content: center;
+    }
+
+    /* Section Recently Played */
+
+    #recently-played .albums{
+        flex-basis: calc(100% / 4);
+    }
+    
+    #recently-played .albums .col{
+        max-width: 150px;
+        margin-bottom: 20px;
+    }
+
+    /* Section For You */
+
+    #for-you .albums .col{
+        max-width: 150px;
+        margin-bottom: 20px;
+    }
+
+    /* Section Artists Populars */
+
+    #artists-populars .albums .col{
+        max-width: 150px;
+        margin-bottom: 100px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    
+    
+}
+
+@media screen and (max-width: 576px) {
+    
 }
